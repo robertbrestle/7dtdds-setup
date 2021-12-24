@@ -39,12 +39,12 @@ After deploying your new EC2 instance, follow the below instructions to configur
 
 1. As root, run `bootstrap.sh`
 2. Once complete, switch to the steam user `su -l steam` and navigate to the steamcmd directory `cd ~/steamcmd`
-3. Run steamcmd `./steamcmd`
-    a. Login with your Steam credentials `login STEAM_USERNAME STEAM_PASSWORD`
-    b. Enter your steamguard code if prompted
-    c. Exit the script `exit`
-4. To install the dedicated server, run `/opt/games/bin/update_7days.sh STEAM_USERNAME STEAM_PASSWORD`
-    a. As of Alpha 20, the server download is over 13GB. This may take 10+ minutes to download and verify
+3. Run steamcmd `./steamcmd`  
+    a. Login with your Steam credentials `login STEAM_USERNAME STEAM_PASSWORD`  
+    b. Enter your steamguard code if prompted  
+    c. Exit the script `exit`  
+4. To install the dedicated server, run `/opt/games/bin/update_7days.sh STEAM_USERNAME STEAM_PASSWORD`  
+    a. As of Alpha 20, the server download is over 13GB. This may take 10+ minutes to download and verify  
 
 After these steps, you can begin modifying of your server configuration
 
@@ -59,11 +59,11 @@ Once satisfied with your changes, you can run the server with the `/opt/games/st
 ## Automation
 If you would like to have your server run on startup:
 1. Switch to the `steam` user `su -l steam`
-2. Create a new crontab `crontab -e`
-    a. If using vim, press `i` to enter Insert mode
-    b. Add `@reboot /opt/games/startserver.sh`
-    c. Press `Escape` to stop editing
-    d. Enter `:wq` to save and exit
+2. Create a new crontab `crontab -e`  
+    a. If using vim, press `i` to enter Insert mode  
+    b. Add `@reboot /opt/games/startserver.sh`  
+    c. Press `Escape` to stop editing  
+    d. Enter `:wq` to save and exit  
 
 Upon exiting, the crontab will be installed and run at the next reboot.
 
