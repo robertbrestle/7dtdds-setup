@@ -69,6 +69,9 @@ Upon exiting, the crontab will be installed and run at the next reboot.
 
 If you want to remove the crontab, simply follow the above steps and remove the entire `@reboot ...` line.
 
+# Telnet Functionality
+In addition to this setup documentation, I have included some scripts showing off telnet functionality. Please see the `telnet/` directory for more information.
+
 # Troubleshooting
 Server logs are saved under `/opt/games/7days/7DaysToDieServer_Data/output_log*.txt`
 
